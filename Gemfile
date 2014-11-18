@@ -29,6 +29,11 @@ gem 'spring',        group: :development
 gem "therubyracer", :require => 'v8'
 gem 'byebug',      '3.4.0'
 
+group :production do
+  gem 'rails_12factor', '0.0.2'
+  gem 'unicorn',        '4.8.3'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
